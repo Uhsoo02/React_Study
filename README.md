@@ -1,16 +1,69 @@
-# React + Vite
+# ⚛️ React Study - Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React의 기본 개념과 동작 방식을 익히기 위해 진행한 학습용 프로젝트입니다.
 
-Currently, two official plugins are available:
+YouTube 강의를 참고하여 Todo List의 기본 기능을 클론코딩한 뒤,  
+구현된 코드를 복습하고 직접 추가 기능을 구현하면서 프로젝트를 확장하고 있습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✅ 현재 구현 기능
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Todo 추가
+- Todo 목록 출력
+- Todo 완료 / 미완료 상태 변경
+- Todo 삭제
+- 완료된 Todo 취소선 표시
+- Todo가 없을 경우 안내 문구 출력
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📚 학습 내용
+
+- `useState`를 활용한 상태 관리
+- input 값 관리 및 이벤트 처리
+- `map()`을 활용한 목록 렌더링
+- `filter()`를 활용한 Todo 삭제
+- Spread 연산자를 활용한 객체 상태 변경
+- 조건부 렌더링
+- React의 `key` 사용 방법
+- 상태에 따른 CSS 클래스 변경
+
+---
+
+## 🚀 추가 예정 기능
+
+- [ ] 빈 Todo 등록 방지
+- [ ] Todo 개수 표시
+- [ ] 전체 / 진행 중 / 완료 필터
+- [ ] Todo 수정
+- [ ] 전체 Todo 완료 처리
+- [ ] 완료된 Todo 전체 삭제
+- [ ] `localStorage`를 활용한 데이터 저장
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+---
+
+## 📌 학습 방식
+
+1. YouTube 강의를 참고하여 기본 기능 클론코딩
+2. 작성한 코드의 동작 원리 복습
+3. 주요 기능을 직접 다시 구현하며 이해도 확인
+4. 클론코딩에 없는 기능을 직접 추가
+5. 필요한 경우 AI와 공식 문서를 활용하여 문제 해결
+
+---
+
+## 📖 참고
+
+초기 Todo List 구현은 React 학습을 목적으로 YouTube 강의를 참고하여 클론코딩했습니다.  
+이후 추가 기능은 직접 설계하고 구현하며 프로젝트를 확장할 예정입니다.
