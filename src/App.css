@@ -1,0 +1,194 @@
+/* 전체 화면 */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  background-color: #f5f5f7;
+}
+
+/* Todo List 카드 */
+.todo-container {
+  width: 100%;
+  max-width: 550px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 제목 영역 */
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #888888;
+}
+
+/* 입력 영역 */
+.input-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* 할 일 입력창 */
+.todo-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* 입력창 클릭 */
+.todo-input:focus {
+  border-color: #7057ff;
+  box-shadow: 0 0 0 3px rgba(112, 87, 255, 0.1);
+}
+
+/* placeholder */
+.todo-input::placeholder {
+  color: #aaaaaa;
+}
+
+/* 추가 버튼 */
+.add-button {
+  border: none;
+  border-radius: 10px;
+  padding: 0 22px;
+  background-color: #7057ff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* 추가 버튼 hover */
+.add-button:hover {
+  background-color: #5e46e8;
+}
+
+/* Todo 목록 */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 할 일이 없을 때 */
+.empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+/* 각각의 Todo */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
+/* Todo에 마우스 올렸을 때 */
+.todo-item:hover {
+  border-color: #d8d2ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 체크박스 영역 */
+.todo-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 체크박스 */
+.todo-checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #7057ff;
+}
+
+/* Todo 내용 */
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333333;
+  word-break: break-word;
+}
+
+/* 완료된 Todo */
+.todo-item.completed {
+  background-color: #f8f8fa;
+}
+
+/* 완료된 Todo 글자 */
+.todo-item.completed .todo-text {
+  color: #aaaaaa;
+  text-decoration: line-through;
+}
+
+/* 삭제 버튼 */
+.delete-button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+/* 삭제 버튼 hover */
+.delete-button:hover {
+  opacity: 1;
+  background-color: #ffecec;
+  transform: scale(1.1);
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 600px) {
+  .app {
+    padding: 40px 15px;
+  }
+
+  .todo-container {
+    padding: 24px 20px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .input-form {
+    flex-direction: column;
+  }
+
+  .add-button {
+    height: 45px;
+  }
+}
